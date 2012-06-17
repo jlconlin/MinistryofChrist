@@ -4,7 +4,7 @@
 :call IMAP('\ic', '\ibiblechvs{<++>}(<++>)<++>', 'tex')
 :call IMAP('\bi', '\bibleverse{<++>}(<++>)<++>', 'tex')
 :call IMAP('\gi', '\gindex{<++>}<++>', 'tex')
-:call IMAP('row', '<++> & <++> & <++> & <++> & <++> & <++> & <++> \\', 'tex')
+:call IMAP('row', '<++> & <++> & <++> & <++> & <++> & <++> & <++> \\<++>', 'tex')
 " :iab ib \ibibleverse{<++>}(<++>)<++>
 :iab bq \blockquote[\ibibleverse{<++>}(<++>)]{<++>}<++>
 :iab bj \blockquote[\JST{<++>}{<++>}]{<++>}<++>

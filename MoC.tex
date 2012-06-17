@@ -1,14 +1,30 @@
-\documentclass{scrartcl}
+\documentclass[8pt]{scrartcl}
 \usepackage[T1]{fontenc}
 \usepackage{bibleref-lds}
+%\usepackage{bibleref}
 \usepackage{booktabs}
 \usepackage[]{longtable}
 \usepackage{tabularx}
 \usepackage{ldsscriptureref}
 \usepackage{multirow}
 \usepackage[scaled]{helvet}
+\usepackage{collcell}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage[margin=1in]{geometry}
 
 \renewcommand*\familydefault{\sfdefault} 
+
+%\newcommand{\Wchvs}[1]{\ibiblechvs{Matthew}(#1)}%
+%\newcommand{\Kchvs}[1]{\ibiblechvs{Mark}(#1)}%
+%\newcommand{\Lchvs}[1]{\ibiblechvs{Luke}(#1)}%
+%\newcommand{\Jchvs}[1]{\ibiblechvs{John}(#1)}%
+
+\newcolumntype{W}{>{\collectcell\Wchvs}{c}<{\endcollectcell}}
+\newcolumntype{K}{>{\collectcell\Kchvs}{c}<{\endcollectcell}}
+\newcolumntype{E}{>{\collectcell\Lchvs}{c}<{\endcollectcell}}
+\newcolumntype{N}{>{\collectcell\Jchvs}{c}<{\endcollectcell}}
+
 
 \title{Ministry of Christ}
 \subtitle{Harmonizing the New Testament account with ``Jesus the Christ'' by Dr. James E. Talmage}
@@ -17,7 +33,26 @@
 
 \begin{document}
 \maketitle
+
 In this document, I reproduce the pamphlet ``Ministry of Christ'' by Curtis Wright``.
+
 \input{MinistryofChrist.tex}
+
+\begin{comment}
+\begin{longtable}[h]{lllW K E N}
+    \toprule
+    \multicolumn{1}{c}{Events} & \multicolumn{1}{c}{Locale} & Page & \multicolumn{1}{l}{Matthew} & \multicolumn{1}{l}{Mark} & \multicolumn{1}{l}{Luke} & \multicolumn{1}{l}{John} \\
+    \midrule
+\endhead
+    \bottomrule
+\endfoot
+    \bottomrule
+\endlastfoot
+1:1 & 1:1 & 1:1 & 1:1 & 1:1 & 1:1 & 1:1 \\
+1:2 & 1:2 & 1:2 & 1:2 & 1:2 & 1:2 & 1:2 \\
+1:3 & 1:3 & 1:3 & 1:3 & 1:3 & 1:3 & 1:3 \\
+\end{longtable}
+\end{comment}
+
 
 \end{document}
