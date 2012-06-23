@@ -1,42 +1,32 @@
 \documentclass[8pt]{scrartcl}
 \usepackage[T1]{fontenc}
-\usepackage{bibleref-lds}
-%\usepackage{bibleref}
 \usepackage{booktabs}
 \usepackage[]{longtable}
 \usepackage{tabularx}
-\usepackage{ldsscriptureref}
-\usepackage{multirow}
 \usepackage[scaled]{helvet}
-\usepackage{collcell}
 \usepackage{xcolor}
 \usepackage{verbatim}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=0.25in, paperwidth=4in, paperheight=7.5in]{geometry}
+\usepackage{pdflscape}
+\usepackage{nopageno}
 
 \renewcommand*\familydefault{\sfdefault} 
 
-%\newcommand{\Wchvs}[1]{\ibiblechvs{Matthew}(#1)}%
-%\newcommand{\Kchvs}[1]{\ibiblechvs{Mark}(#1)}%
-%\newcommand{\Lchvs}[1]{\ibiblechvs{Luke}(#1)}%
-%\newcommand{\Jchvs}[1]{\ibiblechvs{John}(#1)}%
-
-\newcolumntype{W}{>{\collectcell\Wchvs}{c}<{\endcollectcell}}
-\newcolumntype{K}{>{\collectcell\Kchvs}{c}<{\endcollectcell}}
-\newcolumntype{E}{>{\collectcell\Lchvs}{c}<{\endcollectcell}}
-\newcolumntype{N}{>{\collectcell\Jchvs}{c}<{\endcollectcell}}
-
-
 \title{Ministry of Christ}
 \subtitle{Harmonizing the New Testament account with ``Jesus the Christ'' by Dr. James E. Talmage}
-\author{Curtis Wright\\\small (re)Typset by Jeremy Lloyd Conlin}
-\publishers{Copyright 1953\\By Deseret Book Company\\\small Printed in the U. S. A.}
+\author{\Huge Curtis Wright\\\small (re)Typset by Jeremy Lloyd Conlin}
+\date{}
+\publishers{\vspace{4.5in} Copyright 1953\\By Deseret Book Company\\\small Printed in the U. S. A.}
 
 \begin{document}
+\pagestyle{empty}
 \maketitle
 
-In this document, I reproduce the pamphlet ``Ministry of Christ'' by Curtis Wright``.
+%In this document, I reproduce the pamphlet ``Ministry of Christ'' by Curtis Wright``.
 
+\begin{landscape}
 \input{MinistryofChrist.tex}
+\end{landscape}
 
 \begin{comment}
 \begin{longtable}[h]{lllW K E N}
