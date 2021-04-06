@@ -9,6 +9,7 @@
 \usepackage[margin=0.25in, paperwidth=4in, paperheight=7.5in]{geometry}
 \usepackage{pdflscape}
 \usepackage{nopageno}
+\usepackage{multirow}
 
 \renewcommand*\familydefault{\sfdefault} 
 
@@ -17,6 +18,8 @@
 \author{\Huge Curtis Wright\\\small (re)Typset by Jeremy Lloyd Conlin}
 \date{}
 \publishers{\vspace{4.5in} Copyright 1953\\By Deseret Book Company\\\small Printed in the U. S. A.}
+
+\newcolumntype{B}{l@{\hspace{0.5em}}}
 
 \begin{document}
 \pagestyle{empty}
@@ -27,22 +30,5 @@
 \begin{landscape}
 \input{MinistryofChrist.tex}
 \end{landscape}
-
-\begin{comment}
-\begin{longtable}[h]{lllW K E N}
-    \toprule
-    \multicolumn{1}{c}{Events} & \multicolumn{1}{c}{Locale} & Page & \multicolumn{1}{l}{Matthew} & \multicolumn{1}{l}{Mark} & \multicolumn{1}{l}{Luke} & \multicolumn{1}{l}{John} \\
-    \midrule
-\endhead
-    \bottomrule
-\endfoot
-    \bottomrule
-\endlastfoot
-1:1 & 1:1 & 1:1 & 1:1 & 1:1 & 1:1 & 1:1 \\
-1:2 & 1:2 & 1:2 & 1:2 & 1:2 & 1:2 & 1:2 \\
-1:3 & 1:3 & 1:3 & 1:3 & 1:3 & 1:3 & 1:3 \\
-\end{longtable}
-\end{comment}
-
 
 \end{document}
